@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browser Technologie</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://static-ns-nl-data.fep-p.cla.ns.nl/apps/nessie/fonts/1.0.1/fonts.css" />
 
 </head>
 
 <body>
     <header>
-
+        <nav>
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+        </nav>
     </header>
 
-    <body>
+    <main>
         <h1>Gegevens van de overledene</h1>
         <!-- sectie 1a  -->
         <form action="">
-            <fieldset>
-                <legend>1a</legend>
+
+            <div class="divVan1a">
+            <fieldset class="_1a">
+                <legend class="legend1a">1a</legend>
                 <h2>Vul hier de gegevens in van de overledene</h2>
                 <label for="voorLetters">Voorletters</label>
                 <input type="text" id="voorLetters" required>
@@ -36,45 +46,46 @@
                 <label for="overlijdensDatum">Overlijdensdatum</label>
                 <input type="date" id="overlijdensDatum">
             </fieldset>
+            </div>
         
         <!-- sectie 1b -->
-        
-            <fieldset>
-                <legend>1b</legend>
+        <div class="divVan1b">
+            <fieldset class="_1b">
+                <legend class="legend1b">1b</legend>
 
-                <fieldset>
+                <fieldset class="_1b-1">
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van
                         overlijden?</legend>
 
-                    <label for="overledeneGetrouwdNee">Nee. Ga verder met vraag 1c.
-                        <input type="radio" name="1BEersteVraag" id="overledeneGetrouwdNee" value="nee">
+                    <label>Nee. Ga verder met vraag 1c.
+                        <input type="radio" name="1bEersteVraag" id="overledeneGetrouwdNee" value="nee">
                     </label>
 
-                    <label for="overledeneGetrouwdJa">Ja
-                        <input type="radio" name="1BEersteVraag" id="overledeneGetrouwdJa" value="ja">
+                    <label>Ja
+                        <input type="radio" name="1bEersteVraag" id="overledeneGetrouwdJa" value="ja">
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="_1b-2">
                     <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of
                         partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
-                    <label for="overledeneNee">Nee. Ga verder met vraag 1c.
-                        <input type="radio" name="1BEersteVraag" id="overledeneNee" value="nee">
+                    <label>Nee. Ga verder met vraag 1c.
+                        <input type="radio" name="1bTweedeVraag" id="overledeneNee" value="nee">
                     </label>
 
-                    <label for="overledeneJa">Ja. Stuur een kopie van de akte mee met de aangifte.
-                        <input type="radio" name="1BEersteVraag" id="overledeneJa" value="ja">
+                    <label>Ja. Stuur een kopie van de akte mee met de aangifte.
+                        <input type="radio" name="1bTweedeVraag" id="overledeneJa" value="ja">
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="_1b-3" >
                     <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
-                    <label for="verrekenbedingNee">Nee.
-                        <input type="radio" name="1BEersteVraag" id="verrekenbedingNee" value="nee">
+                    <label>Nee.
+                        <input type="radio" name="1bDerdeVraag" id="verrekenbedingNee" value="nee">
                     </label>
 
-                    <label for="verrekenbedingJa">Ja.
-                        <input type="radio" name="1BEersteVraag" id="verrekenbedingJa" value="ja">
+                    <label>Ja.
+                        <input type="radio" name="1bDerdeVraag" id="verrekenbedingJa" value="ja">
                     </label>
                 </fieldset>
 
@@ -83,14 +94,15 @@
                 
 
             </fieldset>
+        </div>
         
 
         <!-- sectie 1c -->
-        
-            <fieldset>
-                <legend>1c</legend>
+        <div class="divVan1c">
+            <fieldset class="_1c">
+                <legend class="legend1c">1c</legend>
 
-                <fieldset>
+                <fieldset class="_1c-1">
                 <legend>Had de overledene kinderen?</legend>
 
                 <label for="children_no">
@@ -104,7 +116,7 @@
                 </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="_1c-2">
                 <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
 
                 <label for="kindOverledenNee">
@@ -118,7 +130,7 @@
                 </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="_1c-3">
                 <legend>Had dit overleden kind zelf kinderen?</legend>
 
                 <label for="zelfKindOverledenNee">
@@ -134,14 +146,14 @@
 
 
             </fieldset>
-        
+        </div>
 
         <!-- sectie 1d -->
-        
-            <fieldset>
-                <legend>1d</legend>
+        <div class="divVan1d">
+            <fieldset class="_1d">
+                <legend class="legend1d">1d</legend>
 
-                <fieldset>
+                <fieldset class="_1d-1">
                     <legend>Had de overledene een testament?</legend>
                     <label for="overledeNee">
                         Nee. Ga verder met vraag 2.
@@ -157,7 +169,7 @@
                 <label for="ProtocolnummerNotaris">Protocolnummer notaris</label>
                 <input type="number" id="ProtocolnummerNotaris" required>
 
-                <fieldset>
+                <fieldset class="_1d-2">
                     <label for="voorLetters">Voorletter(s)</label>
                     <input type="text" id="voorLetters" required>
 
@@ -176,10 +188,11 @@
                 <input type="date" id="datumTestament" required>
 
             </fieldset>
+        </div>
         </form>
 
 
-    </body>
+    </main>
 
     <footer>
 

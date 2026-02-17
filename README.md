@@ -12,3 +12,15 @@ Wat ga ik morgen doen? Morgen ga ik me website een stijl geven en werken met css
 
 bronnen;
 - https://tonsky.me/blog/tahoe-icons/
+
+### Daily check out 17/02/2026
+Wat heb ik vandaag gedaan? 
+ik heb vandaag mijn website stijl gegeven. Ik heb de kleuren opgezocht op de NS website en daarna die toegepast in mijn code. Vervolgens heb ik de workshop gevolgd om meer te weten over HTML. En ben ik voor de rest van de dag aan mijn website gaan zitten.
+
+Hoeveel tijd heeft me dat gekost? Het heeft me ongveer 1.3 u gekost voor de workshop, en voor mijn eigen werk 3.
+
+Wat heb ik geleerd? ik heb geleerd hoe ik beter kan werken met MDN, dus hoe ik bepaalde dingen kan zoeken voor het coderen. En een paar inputs die ik kan gebruiken.
+
+Wat ga ik morgen doen? Morgen ga ik me website's stijl af proberen te maken van de eerste pagina.
+
+bronnen;
