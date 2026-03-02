@@ -44,6 +44,8 @@ fieldset {
 
 body{
     background-color: var(--background-color);
+    font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
 }
 
 h1 {
@@ -91,6 +93,7 @@ p {
 
 .legend1a, .legend1b, .legend1c, .legend1d {
     font-size: 1.5em;
+    padding: 0.5em 0;
 }
 
 ._1a input {
@@ -108,16 +111,37 @@ p {
 
 
 /* tweede stuk 1b */
-
-._1b-1, ._1b-2, ._1b-3 {
-    margin-top: 2em;
+._1b-1{
     padding: 0;
+    margin-top: 1em;
+}
+._1b-2, ._1b-3 {
+    margin-top: 2em;
+    padding: 0 0;
 }
 
-/* ._1b-1 {
-    display: flex;
-    flex-direction: column;
-} */
+._1c-1, ._1c-2, ._1c-3 {
+    margin-top: 1em;
+    padding: 0 0;
+}
+
+._1d-2 input {
+    display: block;
+    margin: 0.5em 0 1em 0;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 2px solid var(--ns-border);
+}
+
+._1d-2 legend {
+    margin: 1em 0 1em 0;
+}
+
+._1d-1, ._1d-2 {
+    margin-top: 1em;
+    padding: 0 0;
+}
 
 label{
     margin: 0.5em 0 0.5em 0;
@@ -145,3 +169,49 @@ label:has(input[type="radio"]:checked) {
   border-color: var(--ns-blue);
   background-color: rgba(0, 48, 130, 0.04);
 }
+
+/* progressive disclosure part */
+
+.hidden-fieldset {
+  display: none;
+}
+.divVan1c, .divVan1d {
+  display: none;
+}
+
+/* progressive disclosure tussen de div */
+.divVan1b:has(input[value="nee"]:checked) ~ .divVan1c {
+  display: block;
+}
+
+.divVan1b:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c {
+  display: block;
+}
+
+.divVan1c:has(input[value="nee"]:checked) + .divVan1d {
+  display: block;
+}
+/* progressive disclosure binnen de childeren van de div */
+
+
+._1b-1:has(input[value="ja"]:checked) ~ ._1b-2 {
+  display: block;
+}
+
+._1b-2:has(input[value="ja"]:checked) ~ ._1b-3 {
+  display: block;
+}
+
+/* het veldsetje _1c-1 was sowieso verborgen; toon het alleen als de
+   sectie zelf zichtbaar is */
+._1c-1 {
+  display: none;
+}
+
+.divVan1b:has(input[name="1bEersteVraag"][value="nee"]:checked) + .divVan1c ._1c-1 {
+  display: block;
+}
+
+/* de oude, niet‑werkende selector kan weg of in ieder geval wordt
+   genegeerd door de hierboven geplaatste regels */
+/* ._1b-1:has(input[value="nee"]:checked) ~ ._1c-1 { display:block; } */
