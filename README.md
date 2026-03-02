@@ -24,3 +24,15 @@ Wat heb ik geleerd? ik heb geleerd hoe ik beter kan werken met MDN, dus hoe ik b
 Wat ga ik morgen doen? Morgen ga ik me website's stijl af proberen te maken van de eerste pagina.
 
 bronnen;
+
+### Daily check out 2/03/2026
+Wat heb ik vandaag gedaan? 
+ik heb vandaag mijn website aangepast, ik heb progressive disclosure toegevoegd, en ik heb de workshop gevolg over validefren. 
+
+Hoeveel tijd heeft me dat gekost? Het heeft me ongveer 1.3 u gekost voor de workshop, en voor mijn eigen werk 3.
+
+Wat heb ik geleerd? ik heb geleerd hoe ik me website's html css kan valideren en hoe ik progressive disclosure kan laten werken met css alleen ipv javascript
+
+Wat ga ik morgen doen? Morgen ga ik me website's afmaken qua progressive disclosure en stijl, en als ik genoeg tijd heb . ga ik de ander pettern in doen.
+
+bronnen;
