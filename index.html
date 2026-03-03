@@ -15,13 +15,55 @@
     <header>
         <nav>
             <ol>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li>
+                    <a href="https://www.ns.nl/">
+                        <svg
+                            xmlns:svg="http://www.w3.org/2000/svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.0"
+                            width="1024"
+                            height="414"
+                            viewBox="-2.04189744 -2.04189744 178.37648488 72.14704288"
+                            id="svg26940"
+                        >
+                            <defs id="defs26942" />
+                            <path
+                            d="M 76.19003,32.7088 C 72.73763,29.33945 68.00393,27.23954 62.8194,27.23954 L 26.08874,27.23954 L 39.67292,13.61977 L 74.23248,13.61977 C 75.69174,13.6435 77.05609,14.28415 78.01707,15.24513 L 98.07894,35.36632 C 101.53134,38.7238 106.25317,40.83558 111.47329,40.83558 L 148.23955,40.83558 L 134.63165,54.45535 L 100.10767,54.45535 C 98.62468,54.40789 97.28406,53.77911 96.31122,52.78254 L 76.19003,32.7088 z M 86.68959,62.43976 C 90.10639,65.89216 94.85196,68.06325 100.10767,68.06325 L 140.23141,68.06325 L 174.29269,34.03756 L 140.23141,0 L 121.00001,0 L 148.23955,27.23954 L 111.47329,27.23954 C 110.0259,27.23954 108.67351,26.65821 107.7243,25.73282 L 87.6387,5.64723 C 84.19817,2.15924 79.46447,0.01187 74.23248,0 L 34.04952,0 L 0,34.03756 L 34.04952,68.06325 L 53.29268,68.06325 L 26.08874,40.83558 L 62.8194,40.83558 C 64.27866,40.83558 65.59556,41.41691 66.5684,42.36602 L 86.68959,62.43976"
+                            id="path25442"
+                            style="
+                                fill: #000066;
+                                fill-opacity: 1;
+                                fill-rule: evenodd;
+                                stroke: none;"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <button class="noStyling">In English</button>
+                </li>
+
+                <li>
+                    <button class="noStyling">
+                    <svg
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                    >
+                        <!--?lit$763152601$-->
+                        <path
+                        d="M12 12c2.21 0 4-1.79 4-4V6c-.01-2.17-1.84-4-4-4S8 3.83 8 6v2c0 2.21 1.79 4 4 4M9 6c.01-1.62 1.38-3 3-3s3 1.37 3 3v2c0 1.63-1.37 3-3 3S9 9.63 9 8zm7 7c-.28 0-.5.22-.5.5s.22.5.5.5c1.92 0 4 1.53 4 4v3H4v-3c0-2.47 2.08-4 4-4 .28 0 .5-.22.5-.5S8.28 13 8 13c-2.4 0-5 1.91-5 5v4h18v-4c0-3.09-2.6-5-5-5"
+                        ></path>
+                    </svg>
+                    Mijn NS
+                    </button>
+                </li>
             </ol>
         </nav>
     </header>
-
+    
     <main>
         <h1>Gegevens van de overledene</h1>
         <!-- sectie 1a  -->
@@ -77,6 +119,10 @@
                         <label>Ja. Stuur een kopie van de akte mee met de aangifte.
                             <input type="radio" name="1bTweedeVraag" id="overledeneJa" value="ja">
                         </label>
+
+                        <label> Upload een PDF van de akte
+                            <input type="file">
+                        </label>
                     </fieldset>
 
                     <fieldset class="_1b-3 hidden-fieldset">
@@ -87,12 +133,7 @@
 
                         <label>Ja.
                             <input type="radio" name="1bDerdeVraag" id="verrekenbedingJa" value="ja">
-                        </label>
-
-                        <label> Upload een PDF van de akte
-                            <input type="file">
-                        </label>
-                    
+                        </label>                    
 
                         <label for="partnerschapsVoorwaarden">Datum huwelijkse of partnerschapsvoorwaarden</label>
                         <input type="date" id="partnerschapsVoorwaarden" required>
@@ -161,7 +202,7 @@
 
                     <fieldset class="_1d-1">
                         <legend>Had de overledene een testament?</legend>
-                        <label for="overledeNee">
+                        <label for="overledenTestamentNee">
                             Nee. Ga verder met vraag 2.
                             <input type="radio" name="overledenTestament" id="overledenTestamentNee" value="nee" />
                         </label>
@@ -198,6 +239,9 @@
                     
                 </fieldset>
             </div>
+
+            <button class="nextButton" type="submit">Volgende Stap</button>
+
         </form>
 
 

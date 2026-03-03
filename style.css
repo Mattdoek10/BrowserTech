@@ -38,6 +38,23 @@
     }
 }
 
+/* header gedeelte */
+
+header nav ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1em;
+}
+
+header nav ol li a svg{
+    width: 20vw;
+}
+
+
+
+
 fieldset {
     border: 0;
 }
@@ -179,18 +196,19 @@ label:has(input[type="radio"]:checked) {
   display: none;
 }
 
+
 /* progressive disclosure tussen de div */
 .divVan1b:has(input[value="nee"]:checked) ~ .divVan1c {
   display: block;
 }
 
-.divVan1b:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c {
+.divVan1c:has(input[value="nee"]:checked) ~ .divVan1d {
   display: block;
 }
 
-.divVan1c:has(input[value="nee"]:checked) + .divVan1d {
+/* .divVan1d:has(input[value="nee"]:checked) ~ .sendButton {
   display: block;
-}
+} */
 /* progressive disclosure binnen de childeren van de div */
 
 
@@ -202,16 +220,51 @@ label:has(input[type="radio"]:checked) {
   display: block;
 }
 
-/* het veldsetje _1c-1 was sowieso verborgen; toon het alleen als de
-   sectie zelf zichtbaar is */
-._1c-1 {
-  display: none;
-}
 
-.divVan1b:has(input[name="1bEersteVraag"][value="nee"]:checked) + .divVan1c ._1c-1 {
+._1c-1:has(input[value="ja"]:checked) ~ ._1c-2 {
   display: block;
 }
 
-/* de oude, niet‑werkende selector kan weg of in ieder geval wordt
-   genegeerd door de hierboven geplaatste regels */
-/* ._1b-1:has(input[value="nee"]:checked) ~ ._1c-1 { display:block; } */
+._1c-2:has(input[value="ja"]:checked) ~ ._1c-3 {
+  display: block;
+}
+
+
+._1d-1:has(input[value="ja"]:checked) ~ ._1d-2 {
+  display: block;
+}
+
+/* het veldsetje _1c-1 was sowieso verborgen; toon het alleen als de
+   sectie zelf zichtbaar is */
+/* ._1c-1 {
+  display: none;
+} */
+
+.divVan1b:has(input[name="1bEersteVraag"][value="nee"]:checked) + .divVan1c ._1c-1, 
+.divVan1b:has(input[name="1bTweedeVraag"][value="nee"]:checked) + .divVan1c ._1c-1, 
+.divVan1b:has(input[name="1bDerdeVraag"][value="nee"]:checked) + .divVan1c ._1c-1, 
+.divVan1b:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c, 
+.divVan1b:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c ._1c-1 {
+  display: block;
+}
+
+.divVan1c:has(input[name="children"][value="nee"]:checked) + .divVan1d ._1d-1, 
+.divVan1c:has(input[name="kindOverleden"][value="nee"]:checked) + .divVan1d ._1d-1, 
+.divVan1c:has(input[name="zelfKindOverleden"][value="nee"]:checked) + .divVan1d ._1d-1, 
+.divVan1c:has(input[name="zelfKindOverleden"][value="ja"]:checked) + .divVan1d,  
+.divVan1c:has(input[name="zelfKindOverleden"][value="ja"]:checked) + .divVan1d ._1d-1 {
+  display: block;
+}
+
+.nextButton {
+    margin: 1em 0 1em 1em;
+    padding: 1em 2em;
+    font-size: 1em;
+    color: white;
+    background-color: var(--ns-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+}

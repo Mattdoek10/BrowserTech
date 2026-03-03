@@ -36,3 +36,15 @@ Wat heb ik geleerd? ik heb geleerd hoe ik me website's html css kan valideren en
 Wat ga ik morgen doen? Morgen ga ik me website's afmaken qua progressive disclosure en stijl, en als ik genoeg tijd heb . ga ik de ander pettern in doen.
 
 bronnen;
+
+### Daily check out 3/03/2026
+Wat heb ik vandaag gedaan? 
+ik heb vandaag de weekly geek voorbereid tijdens de les. Daarna heb ik me progressive disclosure afgemaakt voor de eerste pettern. Ik heb ook een begin gemaakt aan mijn navigatie.
+
+Hoeveel tijd heeft me dat gekost? Het heeft me ongveer 1.3 u gekost voor de weekly geek, en voor mijn eigen werk 3.
+
+Wat heb ik geleerd? ik heb geleerd hoe ik de progressive disclosure kan laten werken voor de parents en dan ook de childeren daarin.
+
+Wat ga ik morgen doen? Morgen ga ik aan de slag met css to the rescue.
+
+bronnen; https://tractie.ns.nl/2e23992f3/p/088193-iconography/b/02fb99
