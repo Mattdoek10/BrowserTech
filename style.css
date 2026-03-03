@@ -40,16 +40,42 @@
 
 /* header gedeelte */
 
+header{
+    background-color: white;
+    padding: 1em;
+    margin: 0;
+}
+
 header nav ol {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 1em;
+    padding: 0;
 }
 
 header nav ol li a svg{
     width: 20vw;
+}
+
+header nav ol li:nth-of-type(2) button {
+    font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--ns-blue);
+    border:none;
+    background: none;
+    font-size: 0.9em;
+}
+
+header nav ol li:nth-of-type(3) button {
+    font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--ns-blue);
+    border:none;
+    background: none;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
 
 
@@ -62,7 +88,11 @@ fieldset {
 body{
     background-color: var(--background-color);
     font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    margin: 0;
+}
 
+main {
+    margin: 0.5em;
 }
 
 h1 {
