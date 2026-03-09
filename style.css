@@ -38,6 +38,13 @@
     }
 }
 
+/* bron: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* header gedeelte */
 
 header{
@@ -56,7 +63,13 @@ header nav ol {
 }
 
 header nav ol li a svg{
-    width: 20vw;
+    max-width: 6em;
+    height: auto;
+    fill: var(--ns-blue);
+
+    &:hover {
+        fill: var(--ns-yellow);
+    }
 }
 
 header nav ol li:nth-of-type(2) button {
@@ -93,12 +106,27 @@ body{
 
 main {
     margin: 0.5em;
+
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1em;
+        background-color: var(--ns-gray);
+        margin: -0.5em;
+        padding-left: 1em;
+
+        svg {
+            color: red;
+        }
+    }
 }
 
 h1 {
     font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 700;
     color: var(--ns-blue);
+    padding-top: 1em;
 }
 
 h2 {
@@ -217,6 +245,31 @@ label:has(input[type="radio"]:checked) {
   background-color: rgba(0, 48, 130, 0.04);
 }
 
+input[type="file"] {
+  display: none;
+  justify-content: flex-end;
+}
+
+label:has(input[type="file"]) {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  padding: 1rem;
+  border: 2px solid var(--ns-border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: fit-content;
+  margin-left: auto;
+  background-color: var(--ns-blue);
+  color: white;
+  font-size: 1em;
+
+  &:hover {
+    background-color: var(--ns-yellow);
+  }
+}
+
 /* progressive disclosure part */
 
 .hidden-fieldset {
@@ -298,3 +351,33 @@ label:has(input[type="radio"]:checked) {
     display: block;
     margin-left: auto;
 }
+
+._1a input:focus {
+    border: 2px solid var(--ns-blue);
+    outline: none;
+}
+
+._1b-3 {
+    > input {
+        display: block;
+        margin: 0.5em 0 1em 0;
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 5px;
+        border: 2px solid var(--ns-border);
+    }
+
+    label:nth-of-type(3) {
+        display: block;
+        padding-top: 1em;
+    }
+}
+
+input:user-invalid {
+    border-bottom: 4px solid red;
+}
+
+input:user-valid {
+    border-bottom: 4px solid oklch(0.7807 0.187 143.4);
+}
+

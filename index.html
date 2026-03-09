@@ -29,12 +29,7 @@
                             <defs id="defs26942" />
                             <path
                             d="M 76.19003,32.7088 C 72.73763,29.33945 68.00393,27.23954 62.8194,27.23954 L 26.08874,27.23954 L 39.67292,13.61977 L 74.23248,13.61977 C 75.69174,13.6435 77.05609,14.28415 78.01707,15.24513 L 98.07894,35.36632 C 101.53134,38.7238 106.25317,40.83558 111.47329,40.83558 L 148.23955,40.83558 L 134.63165,54.45535 L 100.10767,54.45535 C 98.62468,54.40789 97.28406,53.77911 96.31122,52.78254 L 76.19003,32.7088 z M 86.68959,62.43976 C 90.10639,65.89216 94.85196,68.06325 100.10767,68.06325 L 140.23141,68.06325 L 174.29269,34.03756 L 140.23141,0 L 121.00001,0 L 148.23955,27.23954 L 111.47329,27.23954 C 110.0259,27.23954 108.67351,26.65821 107.7243,25.73282 L 87.6387,5.64723 C 84.19817,2.15924 79.46447,0.01187 74.23248,0 L 34.04952,0 L 0,34.03756 L 34.04952,68.06325 L 53.29268,68.06325 L 26.08874,40.83558 L 62.8194,40.83558 C 64.27866,40.83558 65.59556,41.41691 66.5684,42.36602 L 86.68959,62.43976"
-                            id="path25442"
-                            style="
-                                fill: #000066;
-                                fill-opacity: 1;
-                                fill-rule: evenodd;
-                                stroke: none;"/>
+                            id="path25442"/>
                         </svg>
                     </a>
                 </li>
@@ -67,7 +62,9 @@
     <main>
 
         <div>
-            <img src="" alt="">
+            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			<!--?lit$211063374$--><path d="M12.5 8.5c0-.28-.22-.5-.5-.5s-.5.22-.5.5v5.51h1zm-.51 7.51c-.41 0-.75.34-.75.75s.34.75.75.75.75-.34.75-.75-.34-.75-.75-.75"></path><path d="M22.74 17.97h-.01L13.76 2.03C13.4 1.38 12.74 1 12 1s-1.4.39-1.76 1.03L1.26 17.97c-.36.64-.35 1.4.02 2.03s1.02 1 1.74 1h17.95c.72 0 1.38-.38 1.74-1 .37-.63.38-1.39.02-2.03Zm-.88 1.53c-.19.32-.52.51-.88.51H3.02c-.37 0-.69-.19-.88-.51a1.02 1.02 0 0 1 0-1.04L11.1 2.52c.18-.33.52-.52.89-.52s.7.2.89.52l8.97 15.94c.18.33.18.71 0 1.04Z"></path>
+		    </svg>
             <p>Dit is een schoolproject</p>
         </div>
 
@@ -80,19 +77,19 @@
                     <legend class="legend1a">1a</legend>
                     <h2>Vul hier de gegevens in van de overledene</h2>
                     <label for="voorLetters">Voorletters</label>
-                    <input type="text" id="voorLetters" required>
+                    <input type="text" id="voorLetters" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">
 
                     <label for="tussenVoegsels">Tussenvoegsels</label>
-                    <input type="text" id="tussenVoegsels" required>
+                    <input type="text" id="tussenVoegsels" pattern="[a-zA-Z ]+" title="Vul alleen letters in">
 
                     <label for="achterNaam">Achternaam</label>
-                    <input type="text" id="achterNaam" required>
+                    <input type="text" id="achterNaam" required pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in">
 
                     <label for="bsnOverledene">BSN Overledene</label>
                     <input type="number" id="bsnOverledene" required minlength="9" maxlength="9" size="9">
 
                     <label for="overlijdensDatum">Overlijdensdatum</label>
-                    <input type="date" id="overlijdensDatum">
+                    <input type="date" id="overlijdensDatum" required max="2026-03-20" title="Vul een geldige datum in">
                 </fieldset>
             </div>
 
@@ -107,11 +104,11 @@
                             overlijden?</legend>
 
                         <label>Nee. Ga verder met vraag 1c.
-                            <input type="radio" name="1bEersteVraag" id="overledeneGetrouwdNee" value="nee">
+                            <input type="radio" name="1bEersteVraag" id="overledeneGetrouwdNee" value="nee" required>
                         </label>
 
                         <label>Ja
-                            <input type="radio" name="1bEersteVraag" id="overledeneGetrouwdJa" value="ja">
+                            <input type="radio" name="1bEersteVraag" id="overledeneGetrouwdJa" value="ja" required>
                         </label>
                     </fieldset>
 
@@ -119,11 +116,11 @@
                         <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of
                             partnerschapsvoorwaarden laten vastleggen in een notariële akte?</legend>
                         <label>Nee. Ga verder met vraag 1c.
-                            <input type="radio" name="1bTweedeVraag" id="overledeneNee" value="nee">
+                            <input type="radio" name="1bTweedeVraag" id="overledeneNee" value="nee" required>
                         </label>
 
                         <label>Ja. Stuur een kopie van de akte mee met de aangifte.
-                            <input type="radio" name="1bTweedeVraag" id="overledeneJa" value="ja">
+                            <input type="radio" name="1bTweedeVraag" id="overledeneJa" value="ja" required>
                         </label>
 
                         <label> Upload een PDF van de akte
@@ -134,11 +131,11 @@
                     <fieldset class="_1b-3 hidden-fieldset">
                         <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
                         <label>Nee.
-                            <input type="radio" name="1bDerdeVraag" id="verrekenbedingNee" value="nee">
+                            <input type="radio" name="1bDerdeVraag" id="verrekenbedingNee" value="nee" required>
                         </label>
 
                         <label>Ja.
-                            <input type="radio" name="1bDerdeVraag" id="verrekenbedingJa" value="ja">
+                            <input type="radio" name="1bDerdeVraag" id="verrekenbedingJa" value="ja" required>
                         </label>                    
 
                         <label for="partnerschapsVoorwaarden">Datum huwelijkse of partnerschapsvoorwaarden</label>
@@ -159,12 +156,12 @@
 
                         <label for="children_no">
                             Nee
-                            <input type="radio" name="children" id="children_no" value="nee" />
+                            <input type="radio" name="children" id="children_no" value="nee" required />
                         </label>
 
                         <label>
                             Ja
-                            <input type="radio" name="children" value="ja" />
+                            <input type="radio" name="children" value="ja" required />
                         </label>
                     </fieldset>
 
@@ -174,12 +171,12 @@
 
                         <label for="kindOverledenNee">
                             Nee. Ga verder met vraag 1d.
-                            <input type="radio" name="kindOverleden" id="kindOverledenNee" value="nee" />
+                            <input type="radio" name="kindOverleden" id="kindOverledenNee" value="nee" required />
                         </label>
 
                         <label for="kindOverledenJa">
                             Ja
-                            <input type="radio" name="kindOverleden" id="kindOverledenJa" value="ja" />
+                            <input type="radio" name="kindOverleden" id="kindOverledenJa" value="ja" required />
                         </label>
                     </fieldset>
 
@@ -188,12 +185,12 @@
 
                         <label for="zelfKindOverledenNee">
                             Nee.
-                            <input type="radio" name="zelfKindOverleden" id="zelfKindOverledenNee" value="nee" />
+                            <input type="radio" name="zelfKindOverleden" id="zelfKindOverledenNee" value="nee" required />
                         </label>
 
                         <label for="zelfKindOverledenJa">
                             Ja
-                            <input type="radio" name="zelfKindOverleden" id="zelfKindOverledenJa" value="ja" />
+                            <input type="radio" name="zelfKindOverleden" id="zelfKindOverledenJa" value="ja" required />
                         </label>
                     </fieldset>
 
@@ -210,13 +207,13 @@
                         <legend>Had de overledene een testament?</legend>
                         <label for="overledenTestamentNee">
                             Nee. Ga verder met vraag 2.
-                            <input type="radio" name="overledenTestament" id="overledenTestamentNee" value="nee" />
+                            <input type="radio" name="overledenTestament" id="overledenTestamentNee" value="nee" required />
                         </label>
 
                         <label for="overledenTestamentJa">
                             Ja. Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het
                             testament.
-                            <input type="radio" name="overledenTestament" id="overledenTestamentJa" value="ja" />
+                            <input type="radio" name="overledenTestament" id="overledenTestamentJa" value="ja" required />
                         </label>
                     </fieldset>
                     <fieldset class="_1d-2 hidden-fieldset">
@@ -226,21 +223,21 @@
                         <input type="number" id="ProtocolnummerNotaris" required>
                         
                         <label for="voorLetters">Voorletter(s)</label>
-                        <input type="text" id="voorLetters" required>
+                        <input type="text" id="voorLetters" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">
 
                         <label for="tussenVoegsels">Tussenvoegsel(s)</label>
-                        <input type="text" id="tussenVoegsels" required>
+                        <input type="text" id="tussenVoegsels" pattern="[a-zA-Z ]+" title="Vul alleen letters in">
 
                         <label for="achterNaam">Achternaam</label>
-                        <input type="text" id="achterNaam" required>
+                        <input type="text" id="achterNaam" required pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in">
 
                     
 
                         <label for="vestigingsplaats">Vestigingsplaats</label>
-                        <input type="text" id="vestigingsplaats" required>
+                        <input type="text" id="vestigingsplaats" autocomplete="address-level2" required pattern="[a-zA-Z\s\-]+" title="Vul een geldige plaatsnaam in">
 
                         <label for="datumTestament">Datum van het testament of van de laatste wijziging</label>
-                        <input type="date" id="datumTestament" required>
+                        <input type="date" id="datumTestament" required max="2026-03-09">
                     </fieldset>
                     
                 </fieldset>

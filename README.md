@@ -48,3 +48,27 @@ Wat heb ik geleerd? ik heb geleerd hoe ik de progressive disclosure kan laten we
 Wat ga ik morgen doen? Morgen ga ik aan de slag met css to the rescue.
 
 bronnen; https://tractie.ns.nl/2e23992f3/p/088193-iconography/b/02fb99
+
+
+### weekly checkout
+
+content hier
+
+### Daily check out 9/03/2026
+Wat heb ik vandaag gedaan? 
+ik heb vandaag mijn validatie afgemaakt binnen html en css, voor nu laat ik het daarbij, als ik meer tijd heb ga ik van javascript erbij doen. daarnaast heb ik de navigatie afgemaakt en detext daarpnder die zegt dat het een school project is met de stijl van de NS.
+![alt text](image.png)
+
+Daarna heb ik de knop gefixed waarbij iemand een pdf kan uploaden.
+
+Hoeveel tijd heeft me dat gekost? Het heeft me ongveer 4 uren gekost.
+
+Wat heb ik geleerd? ik heb geleerd hoe ik de validatie beter kan doen waarbij er alleen letters moeten worden gebruikt etc. BV;
+`<input type="text" id="voorLetters" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">`
+
+Wat ga ik morgen doen? Morgen ga ik beginnen aan de tweede pattern, en me website responsive maken.
+
+bronnen; 
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-valid
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid
+- https://www.w3schools.com/tags/att_input_pattern.asp
