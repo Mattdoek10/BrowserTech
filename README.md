@@ -49,6 +49,26 @@ Wat ga ik morgen doen? Morgen ga ik aan de slag met css to the rescue.
 
 bronnen; https://tractie.ns.nl/2e23992f3/p/088193-iconography/b/02fb99
 
+### weekly Geek
+
+tijdens deze weekly geek heb ik geleerd hoe ik een checkbox en radiobutton kan laten werken dmv div en span.
+
+wat je namelijk nodig heb is de;
+
+``` html
+
+<span
+  role="checkbox"
+  aria-checked="false"
+  tabindex="0"
+  aria-labelledby="chk1-label"></span>
+<label id="chk1-label">Remember my preferences</label> 
+
+```
+De role zorgt ervoor dat de screenreader het ziet als een checkbox,
+aria-checked="true/false" geeft aan of hij geselecteerd is.
+tabindex="0" op de geselecteerde optie (die krijgt focus)
+Tekst binnen de div werkt als label; of je koppelt met aria-labelledby.
 
 ### weekly checkout
 
@@ -64,7 +84,12 @@ Daarna heb ik de knop gefixed waarbij iemand een pdf kan uploaden.
 Hoeveel tijd heeft me dat gekost? Het heeft me ongveer 4 uren gekost.
 
 Wat heb ik geleerd? ik heb geleerd hoe ik de validatie beter kan doen waarbij er alleen letters moeten worden gebruikt etc. BV;
-`<input type="text" id="voorLetters" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">`
+
+``` HTML
+
+<input type="text" id="voorLetters" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">
+
+```
 
 Wat ga ik morgen doen? Morgen ga ik beginnen aan de tweede pattern, en me website responsive maken.
 
