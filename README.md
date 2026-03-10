@@ -97,3 +97,14 @@ bronnen;
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-valid
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid
 - https://www.w3schools.com/tags/att_input_pattern.asp
+
+### Daily check out 10/03/2026
+Wat heb ik vandaag gedaan? 
+ik heb vandaag weer naar mijn validatie gekeken, want ik wou het ook laten werken in javascript. Ik heb de template gevolgd van de workshop maar ik kwam daar niet uit. Ik was wel heel lang mee bezig maar geen succes. Dus ik heb gekozen om het even te laten liggen. Hierna ben ik aan de slag gegaan met de tweede pattern. Ik heb gekozen voor de pagina 4 van het formulier. Dit heb ik gekozen zoda ik een vergijer kan toevoegen met een knop 'voeg nog een verkrijger toe'. Ik heb de html en css al begin aan gemaakt en moet alleen de javascfript laten werken met templaten.
+
+Hoeveel tijd heeft me dat gekost? Het heeft me ongveer 4-5 uren gekost.
+
+Wat heb ik geleerd? ik heb niet iets nieuws geleerd
+
+Wat ga ik morgen doen? Morgen ga ik CSS doen
+

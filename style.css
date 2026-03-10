@@ -12,7 +12,6 @@
     --section-color: antiquewhite;
     --stroke-color: black;
     --stroke-color-h1: transparent;
-
     --ns-yellow: #ffc000;
     --ns-blue: #003082;
     --ns-gray: #f5f5f5;
@@ -29,7 +28,6 @@
         --section-color: black;
         --stroke-color: white;
         --stroke-color-h1: white;
-
         --ns-yellow: #ffc000;
         --ns-blue: #003082;
         --ns-gray: #f5f5f5;
@@ -39,66 +37,74 @@
 }
 
 /* bron: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* header gedeelte */
-
-header{
-    background-color: white;
-    padding: 1em;
-    margin: 0;
-}
-
-header nav ol {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1em;
-    padding: 0;
-}
-
-header nav ol li a svg{
-    max-width: 6em;
-    height: auto;
-    fill: var(--ns-blue);
-
-    &:hover {
-        fill: var(--ns-yellow);
+input {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 }
 
-header nav ol li:nth-of-type(2) button {
-    font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: var(--ns-blue);
-    border:none;
-    background: none;
-    font-size: 0.9em;
+/* header gedeelte */
+header {
+    background-color: white;
+    padding: 1em;
+    margin: 0;
+
+    nav {
+        ol {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 1em;
+            padding: 0;
+
+            li {
+                a {
+                    svg {
+                        max-width: 6em;
+                        height: auto;
+                        fill: var(--ns-blue);
+
+                        &:hover {
+                            fill: var(--ns-yellow);
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    button {
+                        font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                        color: var(--ns-blue);
+                        border: none;
+                        background: none;
+                        font-size: 0.9em;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    button {
+                        font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                        color: var(--ns-blue);
+                        border: none;
+                        background: none;
+                        font-size: 0.9em;
+                        display: flex;
+                        align-items: center;
+                        gap: 3px;
+                    }
+                }
+            }
+        }
+    }
 }
-
-header nav ol li:nth-of-type(3) button {
-    font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: var(--ns-blue);
-    border:none;
-    background: none;
-    font-size: 0.9em;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-}
-
-
-
 
 fieldset {
     border: 0;
 }
 
-body{
+body {
     background-color: var(--background-color);
     font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     margin: 0;
@@ -133,7 +139,7 @@ h2 {
     font-family: 'NS Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 600;
     color: var(--ns-blue);
-    font-size: 1em
+    font-size: 1em;
 }
 
 legend {
@@ -148,6 +154,7 @@ p {
     font-weight: 300;
     color: var(--pcolor);
 }
+
 /* main {
     background-color: var(--background-color)
 } */
@@ -160,161 +167,197 @@ p {
     padding-top: 5em;
 } */
 
-.divVan1a, .divVan1b, .divVan1c, .divVan1d {
+.divVan1a,
+.divVan1b,
+.divVan1c,
+.divVan1d,
+.divVan2a {
     background-color: var(--ns-gray);
     margin-bottom: 1em;
     border-radius: 10px;
 }
 
-.legend1a, .legend1b, .legend1c, .legend1d {
+.legend1a,
+.legend1b,
+.legend1c,
+.legend1d,
+.legend2a {
     font-size: 1.5em;
     padding: 0.5em 0;
 }
 
-._1a input {
-    display: block;
-    margin: 0.5em 0 1em 0;
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 5px;
-    border: 2px solid var(--ns-border);
-}
+._1a {
+    input {
+        display: block;
+        margin: 0.5em 0 1em 0;
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 5px;
+        border: 2px solid var(--ns-border);
+    }
 
-._1a h2{
-    margin-bottom: 2em;
+    h2 {
+        margin-bottom: 2em;
+    }
 }
-
 
 /* tweede stuk 1b */
-._1b-1{
+._1b-1 {
     padding: 0;
     margin-top: 1em;
 }
-._1b-2, ._1b-3 {
+
+._1b-2,
+._1b-3 {
     margin-top: 2em;
     padding: 0 0;
 }
 
-._1c-1, ._1c-2, ._1c-3 {
+._1c-1,
+._1c-2,
+._1c-3 {
     margin-top: 1em;
     padding: 0 0;
 }
 
-._1d-2 input {
-    display: block;
-    margin: 0.5em 0 1em 0;
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 5px;
-    border: 2px solid var(--ns-border);
+._1d-2 {
+    input {
+        display: block;
+        margin: 0.5em 0 1em 0;
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 5px;
+        border: 2px solid var(--ns-border);
+    }
+
+    legend {
+        margin: 1em 0 1em 0;
+    }
 }
 
-._1d-2 legend {
-    margin: 1em 0 1em 0;
-}
-
-._1d-1, ._1d-2 {
+._1d-1,
+._1d-2 {
     margin-top: 1em;
     padding: 0 0;
 }
 
-label{
+label {
     margin: 0.5em 0 0.5em 0;
+
+    &:has(input[type="radio"]) {
+        &:hover {
+            border-color: var(--ns-blue);
+        }
+
+        display: flex;
+        /* align-items: center; */
+        padding: 1.5rem;
+        border: 2px solid var(--ns-border);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:has(input[type="radio"]:checked) {
+            border-color: var(--ns-blue);
+            background-color: rgba(0, 48, 130, 0.04);
+        }
+    }
+
+    &:has(input[type="file"]) {
+        display: flex;
+        align-items: center;
+        margin-top: 1em;
+        padding: 1rem;
+        border: 2px solid var(--ns-border);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        width: fit-content;
+        margin-left: auto;
+        background-color: var(--ns-blue);
+        color: white;
+        font-size: 1em;
+
+        &:hover {
+            background-color: var(--ns-yellow);
+        }
+    }
 }
 
-label:has(input[type="radio"]):hover {
-  border-color: var(--ns-blue);
-}
+input {
+    &[type="radio"] {
+        appearance: none;
+    }
 
-label:has(input[type="radio"]) {
-  display: flex;
-  /* align-items: center; */
-  padding: 1.5rem;
-  border: 2px solid var(--ns-border);
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
+    &[type="file"] {
+        display: none;
+        justify-content: flex-end;
+    }
 
-input[type="radio"] {
-  appearance: none;
-}
+    &:user-invalid {
+        border-bottom: 4px solid red;
+    }
 
-label:has(input[type="radio"]:checked) {
-  border-color: var(--ns-blue);
-  background-color: rgba(0, 48, 130, 0.04);
-}
-
-input[type="file"] {
-  display: none;
-  justify-content: flex-end;
-}
-
-label:has(input[type="file"]) {
-  display: flex;
-  align-items: center;
-  margin-top: 1em;
-  padding: 1rem;
-  border: 2px solid var(--ns-border);
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  width: fit-content;
-  margin-left: auto;
-  background-color: var(--ns-blue);
-  color: white;
-  font-size: 1em;
-
-  &:hover {
-    background-color: var(--ns-yellow);
-  }
+    &:user-valid {
+        border-bottom: 4px solid oklch(0.7807 0.187 143.4);
+    }
 }
 
 /* progressive disclosure part */
-
 .hidden-fieldset {
-  display: none;
-}
-.divVan1c, .divVan1d {
-  display: none;
+    display: none;
 }
 
+.divVan1c,
+.divVan1d {
+    display: none;
+}
 
 /* progressive disclosure tussen de div */
-.divVan1b:has(input[value="nee"]:checked) ~ .divVan1c {
-  display: block;
+.divVan1b {
+    &:has(input[value="nee"]:checked) ~ .divVan1c {
+        display: block;
+    }
 }
 
-.divVan1c:has(input[value="nee"]:checked) ~ .divVan1d {
-  display: block;
+.divVan1c {
+    &:has(input[value="nee"]:checked) ~ .divVan1d {
+        display: block;
+    }
 }
 
 /* .divVan1d:has(input[value="nee"]:checked) ~ .sendButton {
   display: block;
 } */
 /* progressive disclosure binnen de childeren van de div */
-
-
-._1b-1:has(input[value="ja"]:checked) ~ ._1b-2 {
-  display: block;
+._1b-1 {
+    &:has(input[value="ja"]:checked) ~ ._1b-2 {
+        display: block;
+    }
 }
 
-._1b-2:has(input[value="ja"]:checked) ~ ._1b-3 {
-  display: block;
+._1b-2 {
+    &:has(input[value="ja"]:checked) ~ ._1b-3 {
+        display: block;
+    }
 }
 
-
-._1c-1:has(input[value="ja"]:checked) ~ ._1c-2 {
-  display: block;
+._1c-1 {
+    &:has(input[value="ja"]:checked) ~ ._1c-2 {
+        display: block;
+    }
 }
 
-._1c-2:has(input[value="ja"]:checked) ~ ._1c-3 {
-  display: block;
+._1c-2 {
+    &:has(input[value="ja"]:checked) ~ ._1c-3 {
+        display: block;
+    }
 }
 
-
-._1d-1:has(input[value="ja"]:checked) ~ ._1d-2 {
-  display: block;
+._1d-1 {
+    &:has(input[value="ja"]:checked) ~ ._1d-2 {
+        display: block;
+    }
 }
 
 /* het veldsetje _1c-1 was sowieso verborgen; toon het alleen als de
@@ -323,20 +366,24 @@ label:has(input[type="file"]) {
   display: none;
 } */
 
-.divVan1b:has(input[name="1bEersteVraag"][value="nee"]:checked) + .divVan1c ._1c-1, 
-.divVan1b:has(input[name="1bTweedeVraag"][value="nee"]:checked) + .divVan1c ._1c-1, 
-.divVan1b:has(input[name="1bDerdeVraag"][value="nee"]:checked) + .divVan1c ._1c-1, 
-.divVan1b:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c, 
-.divVan1b:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c ._1c-1 {
-  display: block;
+.divVan1b {
+    &:has(input[name="1bEersteVraag"][value="nee"]:checked) + .divVan1c ._1c-1,
+    &:has(input[name="1bTweedeVraag"][value="nee"]:checked) + .divVan1c ._1c-1,
+    &:has(input[name="1bDerdeVraag"][value="nee"]:checked) + .divVan1c ._1c-1,
+    &:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c,
+    &:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c ._1c-1 {
+        display: block;
+    }
 }
 
-.divVan1c:has(input[name="children"][value="nee"]:checked) + .divVan1d ._1d-1, 
-.divVan1c:has(input[name="kindOverleden"][value="nee"]:checked) + .divVan1d ._1d-1, 
-.divVan1c:has(input[name="zelfKindOverleden"][value="nee"]:checked) + .divVan1d ._1d-1, 
-.divVan1c:has(input[name="zelfKindOverleden"][value="ja"]:checked) + .divVan1d,  
-.divVan1c:has(input[name="zelfKindOverleden"][value="ja"]:checked) + .divVan1d ._1d-1 {
-  display: block;
+.divVan1c {
+    &:has(input[name="children"][value="nee"]:checked) + .divVan1d ._1d-1,
+    &:has(input[name="kindOverleden"][value="nee"]:checked) + .divVan1d ._1d-1,
+    &:has(input[name="zelfKindOverleden"][value="nee"]:checked) + .divVan1d ._1d-1,
+    &:has(input[name="zelfKindOverleden"][value="ja"]:checked) + .divVan1d,
+    &:has(input[name="zelfKindOverleden"][value="ja"]:checked) + .divVan1d ._1d-1 {
+        display: block;
+    }
 }
 
 .nextButton {
@@ -352,9 +399,13 @@ label:has(input[type="file"]) {
     margin-left: auto;
 }
 
-._1a input:focus {
-    border: 2px solid var(--ns-blue);
-    outline: none;
+._1a {
+    input {
+        &:focus {
+            border: 2px solid var(--ns-blue);
+            outline: none;
+        }
+    }
 }
 
 ._1b-3 {
@@ -367,17 +418,63 @@ label:has(input[type="file"]) {
         border: 2px solid var(--ns-border);
     }
 
-    label:nth-of-type(3) {
+    label {
+        &:nth-of-type(3) {
+            display: block;
+            padding-top: 1em;
+        }
+    }
+}
+
+._2a-2 {
+    > input {
         display: block;
+        margin: 0.5em 0 1em 0;
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 5px;
+        border: 2px solid var(--ns-border);
+    }
+
+    legend {
+        padding: 1em 0 0.5em 0;
+    }
+}
+
+._2a-2-1,
+._2a-2-2 {
+    padding: 0;
+
+    legend {
         padding-top: 1em;
     }
 }
 
-input:user-invalid {
-    border-bottom: 4px solid red;
+.verkijgerToevoegenKnop {
+    margin: 1em 0 1em 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: white;
+    background-color: var(--ns-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-input:user-valid {
-    border-bottom: 4px solid oklch(0.7807 0.187 143.4);
-}
+@media (min-width: 768px) {
+    header {
+        padding: 1em 15vw;
+    }
 
+    main {
+        h1,
+        form {
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+
+        > div {
+            padding-left: 15vw;
+        }
+    }
+}
