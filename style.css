@@ -5,8 +5,7 @@
 
 :root {
 
-    --h1-color: black;
-    --h2-color: black;
+    --h-color: black;
     --pcolor: #2d2d2d;
     --background-color: #FFC917;
     --section-color: antiquewhite;
@@ -17,12 +16,12 @@
     --ns-gray: #f5f5f5;
     --ns-gray-dark: #666;
     --ns-border: #ddd;
+    --ns-white: white;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --h1-color: white;
-        --h2-color: white;
+        --h-color: white;
         --pcolor: white;
         --background-color: #424242;
         --section-color: black;
@@ -33,6 +32,7 @@
         --ns-gray: #f5f5f5;
         --ns-gray-dark: #666;
         --ns-border: #ddd;
+        --ns-white: white;
     }
 }
 
@@ -47,7 +47,7 @@ input {
 
 /* header gedeelte */
 header {
-    background-color: white;
+    background-color: var(--ns-white);
     padding: 1em;
     margin: 0;
 
@@ -66,6 +66,7 @@ header {
                         max-width: 6em;
                         height: auto;
                         fill: var(--ns-blue);
+                        transition: fill 0.3s ease;
 
                         &:hover {
                             fill: var(--ns-yellow);
@@ -154,18 +155,6 @@ p {
     font-weight: 300;
     color: var(--pcolor);
 }
-
-/* main {
-    background-color: var(--background-color)
-} */
-
-/* input:invalid {
-    background-color: red;
-} */
-
-/* ._1a, ._1b, ._1c, ._1d {
-    padding-top: 5em;
-} */
 
 .divVan1a,
 .divVan1b,
@@ -294,6 +283,10 @@ input {
         justify-content: flex-end;
     }
 
+    &[type="date"] {
+        width: 50%;
+    }
+
     &:user-invalid {
         border-bottom: 4px solid red;
     }
@@ -318,11 +311,17 @@ input {
     &:has(input[value="nee"]:checked) ~ .divVan1c {
         display: block;
     }
+    &[type="date"] {
+        width: 50%;
+    }
 }
 
 .divVan1c {
     &:has(input[value="nee"]:checked) ~ .divVan1d {
         display: block;
+    }
+    &[type="date"] {
+        width: 50%;
     }
 }
 
@@ -359,12 +358,6 @@ input {
         display: block;
     }
 }
-
-/* het veldsetje _1c-1 was sowieso verborgen; toon het alleen als de
-   sectie zelf zichtbaar is */
-/* ._1c-1 {
-  display: none;
-} */
 
 .divVan1b {
     &:has(input[name="1bEersteVraag"][value="nee"]:checked) + .divVan1c ._1c-1,
@@ -416,6 +409,10 @@ input {
         padding: 0.75rem;
         border-radius: 5px;
         border: 2px solid var(--ns-border);
+        
+        &[type="date"] {
+        width: 50%;
+    }
     }
 
     label {
@@ -463,18 +460,18 @@ input {
 
 @media (min-width: 768px) {
     header {
-        padding: 1em 15vw;
+        padding: 1em 20vw;
     }
 
     main {
         h1,
         form {
-            margin-left: 15vw;
-            margin-right: 15vw;
+            margin-left: 20vw;
+            margin-right: 20vw;
         }
 
         > div {
-            padding-left: 15vw;
+            padding-left: 20vw;
         }
     }
 }
