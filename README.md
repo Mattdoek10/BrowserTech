@@ -230,4 +230,4 @@ const kloon = template.content.cloneNode(true);
 
 ```
 
-Wat ga ik morgen doen? Morgen ga ik me code beter opschonen en me code goede volgorde geven en me laatste loodjes binnen me website afmaken.
+Wat ga ik morgen doen? Morgen ga ik me code beter opschonen en me code goede volgorde geven en me laatste loodjes binnen me website afmaken. en me radiobuttons naast elkaar zetten, door de styling op het element zelf te zetten waar er display blok staat.
