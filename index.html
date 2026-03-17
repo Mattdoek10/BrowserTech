@@ -77,19 +77,24 @@
                     <legend class="legend1a">1a</legend>
                     <h2>Vul hier de gegevens in van de overledene</h2>
                     <label for="voorLetters">Voorletters</label>
-                    <input type="text" id="voorLetters" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">
+                    <input type="text" id="voorLetters" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in" aria-describedby="error-voorLetters">
+                    <p id="error-voorLetters" class="error" aria-live="polite">Vul alleen letters en punten in.</p>
 
                     <label for="tussenVoegsels">Tussenvoegsels</label>
-                    <input type="text" id="tussenVoegsels" pattern="[a-zA-Z ]+" title="Vul alleen letters in">
+                    <input type="text" id="tussenVoegsels" pattern="[a-zA-Z ]+" title="Vul alleen letters in" aria-describedby="error-achterNaam">
+                    <p id="error-achterNaam" class="error" aria-live="polite">Vul alleen letters in.</p>
 
                     <label for="achterNaam">Achternaam</label>
-                    <input type="text" id="achterNaam" required pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in">
+                    <input type="text" id="achterNaam" required pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in" aria-describedby="error-achterNaam">
+                    <p id="error-achterNaam" class="error" aria-live="polite">Vul alleen letters in.</p>
 
                     <label for="bsnOverledene">BSN Overledene</label>
-                    <input type="number" id="bsnOverledene" required minlength="9" maxlength="9" size="9">
+                    <input type="text" id="bsnOverledene" required minlength="9" maxlength="9" size="9" pattern="[0-9]{9}" aria-describedby="error-bsn">
+                    <p id="error-bsn" class="error" aria-live="polite">Voer een geldig BSN in.</p>
 
                     <label for="overlijdensDatum">Overlijdensdatum</label>
-                    <input type="date" id="overlijdensDatum" required max="2026-03-20" title="Vul een geldige datum in">
+                    <input type="date" id="overlijdensDatum" required max="2026-03-20" aria-describedby="error-overlijdensDatum">
+                    <p id="error-overlijdensDatum" class="error" aria-live="polite">Vul een geldige datum in.</p>
                 </fieldset>
             </div>
 
@@ -103,7 +108,7 @@
                             van
                             overlijden?</legend>
 
-                        <label>Nee. Ga verder met vraag 1c.
+                        <label for="overledeneGetrouwdNee">Nee. Ga verder met vraag 1c.
                             <input type="radio" name="1bEersteVraag" id="overledeneGetrouwdNee" value="nee" required>
                         </label>
 
@@ -220,24 +225,28 @@
                         <legend>Gegevens notaris</legend>
 
                         <label for="ProtocolnummerNotaris">Protocolnummer notaris</label>
-                        <input type="number" id="ProtocolnummerNotaris" required>
-                        
-                        <label for="voorLetters">Voorletter(s)</label>
-                        <input type="text" id="voorLetters" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">
+                        <input type="number" id="ProtocolnummerNotaris" required aria-describedby="error-ProtocolnummerNotaris">
+                        <p id="error-ProtocolnummerNotaris" class="error" aria-live="polite">Dit veld is verplicht.</p>
 
-                        <label for="tussenVoegsels">Tussenvoegsel(s)</label>
-                        <input type="text" id="tussenVoegsels" pattern="[a-zA-Z ]+" title="Vul alleen letters in">
+                        <label for="voorLettersNotaris">Voorletter(s)</label>
+                        <input type="text" id="voorLettersNotaris" required pattern="[A-Za-z.]+" title="Vul alleen letters en punten in" aria-describedby="error-voorLettersNotaris">
+                        <p id="error-voorLettersNotaris" class="error" aria-live="polite">Vul alleen letters en punten in.</p>
 
-                        <label for="achterNaam">Achternaam</label>
-                        <input type="text" id="achterNaam" required pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in">
+                        <label for="tussenVoegselsNotaris">Tussenvoegsel(s)</label>
+                        <input type="text" id="tussenVoegselsNotaris" pattern="[a-zA-Z ]+" title="Vul alleen letters in" aria-describedby="error-tussenVoegselsNotaris">
+                        <p id="error-tussenVoegselsNotaris" class="error" aria-live="polite">Vul alleen letters in.</p>
 
-                    
+                        <label for="achterNaamNotaris">Achternaam</label>
+                        <input type="text" id="achterNaamNotaris" required pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in" aria-describedby="error-achterNaamNotaris">
+                        <p id="error-achterNaamNotaris" class="error" aria-live="polite">Vul alleen letters in.</p>
 
                         <label for="vestigingsplaats">Vestigingsplaats</label>
-                        <input type="text" id="vestigingsplaats" autocomplete="address-level2" required pattern="[a-zA-Z\s\-]+" title="Vul een geldige plaatsnaam in">
+                        <input type="text" id="vestigingsplaats" autocomplete="address-level2" required pattern="[a-zA-Z\s\-]+" title="Vul een geldige plaatsnaam in" aria-describedby="error-vestigingsplaats">
+                        <p id="error-vestigingsplaats" class="error" aria-live="polite">Vul een geldige plaatsnaam in.</p>
 
                         <label for="datumTestament">Datum van het testament of van de laatste wijziging</label>
-                        <input type="date" id="datumTestament" required max="2026-03-09">
+                        <input type="date" id="datumTestament" required max="2026-03-09" aria-describedby="error-datumTestament">
+                        <p id="error-datumTestament" class="error" aria-live="polite">Vul een geldige datum in.</p>
                     </fieldset>
                     
                 </fieldset>
@@ -263,16 +272,20 @@
                     <legend>Gegevens verkrijger 1</legend>
 
                     <label for="bsnVerkrijger1">BSN/RSIN</label>
-                    <input type="number" id="bsnVerkrijger1" minlength="9" maxlength="9" size="9">
+                    <input type="number" id="bsnVerkrijger1" minlength="9" maxlength="9" size="9" aria-describedby="error-bsnVerkrijger1">
+                    <p id="error-bsnVerkrijger1" class="error" aria-live="polite">Voer een geldig BSN/RSIN in (9 cijfers).</p>
 
                     <label for="voorLettersVerkrijger1">Voorletter(s)</label>
-                    <input type="text" id="voorLettersVerkrijger1" pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">
+                    <input type="text" id="voorLettersVerkrijger1" pattern="[A-Za-z.]+" title="Vul alleen letters en punten in" aria-describedby="error-voorLettersVerkrijger1">
+                    <p id="error-voorLettersVerkrijger1" class="error" aria-live="polite">Vul alleen letters en punten in.</p>
 
                     <label for="tussenVoegselsVerkrijger1">Tussenvoegsel(s)</label>
-                    <input type="text" id="tussenVoegselsVerkrijger1" pattern="[a-zA-Z ]+" title="Vul alleen letters in">
+                    <input type="text" id="tussenVoegselsVerkrijger1" pattern="[a-zA-Z ]+" title="Vul alleen letters in" aria-describedby="error-tussenVoegselsVerkrijger1">
+                    <p id="error-tussenVoegselsVerkrijger1" class="error" aria-live="polite">Vul alleen letters in.</p>
 
                     <label for="achterNaamVerkrijger1">Achternaam</label>
-                    <input type="text" id="achterNaamVerkrijger1" pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in">
+                    <input type="text" id="achterNaamVerkrijger1" pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in" aria-describedby="error-achterNaamVerkrijger1">
+                    <p id="error-achterNaamVerkrijger1" class="error" aria-live="polite">Vul alleen letters in.</p>
 
                     <fieldset class="_2a-2-1">
                         <legend>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</legend>
@@ -330,16 +343,20 @@
                     <legend class="legend2a-2">Gegevens verkrijger 1</legend>
 
                     <label for="bsnVerkrijger1">BSN/RSIN</label>
-                    <input type="number" id="bsnVerkrijger1" minlength="9" maxlength="9" size="9">
+                    <input type="number" id="bsnVerkrijger1" minlength="9" maxlength="9" size="9" aria-describedby="error-bsnVerkrijger1">
+                    <p id="error-bsnVerkrijger1" class="error" aria-live="polite">Voer een geldig BSN/RSIN in (9 cijfers).</p>
 
                     <label for="voorLettersVerkrijger1">Voorletter(s)</label>
-                    <input type="text" id="voorLettersVerkrijger1" pattern="[A-Za-z.]+" title="Vul alleen letters en punten in">
+                    <input type="text" id="voorLettersVerkrijger1" pattern="[A-Za-z.]+" title="Vul alleen letters en punten in" aria-describedby="error-voorLettersVerkrijger1">
+                    <p id="error-voorLettersVerkrijger1" class="error" aria-live="polite">Vul alleen letters en punten in.</p>
 
                     <label for="tussenVoegselsVerkrijger1">Tussenvoegsel(s)</label>
-                    <input type="text" id="tussenVoegselsVerkrijger1" pattern="[a-zA-Z ]+" title="Vul alleen letters in">
+                    <input type="text" id="tussenVoegselsVerkrijger1" pattern="[a-zA-Z ]+" title="Vul alleen letters in" aria-describedby="error-tussenVoegselsVerkrijger1">
+                    <p id="error-tussenVoegselsVerkrijger1" class="error" aria-live="polite">Vul alleen letters in.</p>
 
                     <label for="achterNaamVerkrijger1">Achternaam</label>
-                    <input type="text" id="achterNaamVerkrijger1" pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in">
+                    <input type="text" id="achterNaamVerkrijger1" pattern="[a-zA-Z\s\-]+" title="Vul alleen letters in" aria-describedby="error-achterNaamVerkrijger1">
+                    <p id="error-achterNaamVerkrijger1" class="error" aria-live="polite">Vul alleen letters in.</p>
 
                     <fieldset class="_2a-2-1">
                         <legend>Krijgt deze verkrijger waarvoor u geen aangifte doet het hele vermogen?</legend>
@@ -374,7 +391,7 @@
             </div>
             </template>
 
-            <button class="nextButton" type="submit">Volgende Stap</button>
+            <button class="nextButton" type="submit">Versturen</button>
 
         </form>
 

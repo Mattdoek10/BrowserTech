@@ -275,7 +275,15 @@ label {
 
 input {
     &[type="radio"] {
-        appearance: none;
+        position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
     }
 
     &[type="file"] {
@@ -286,6 +294,10 @@ input {
     &[type="date"] {
         width: 50%;
     }
+
+        &[type="text"] {
+            border-bottom: 4px solid var(--ns-border);
+        }
 
     &:user-invalid {
         border-bottom: 4px solid red;
@@ -457,6 +469,23 @@ input {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 0.25em;
+    display: none;
+}
+
+/* Toon foutmelding als input niet geldig is ingevuld */
+input:user-invalid + .error {
+    display: block;
+}
+
+/* Verberg foutmelding als input geldig is ingevuld */
+/* input:user-valid + .error {
+    display: none;
+} */
 
 @media (min-width: 768px) {
     header {
