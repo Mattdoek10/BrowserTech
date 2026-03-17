@@ -217,6 +217,14 @@ p {
         padding: 0.75rem;
         border-radius: 5px;
         border: 2px solid var(--ns-border);
+        border-bottom: 4px solid var(--ns-border);
+
+        
+    &:focus {
+            border: 2px solid var(--ns-blue);
+            border-bottom: 4px solid var(--ns-blue);
+            outline: none;
+        }
     }
 
     legend {
@@ -274,16 +282,9 @@ label {
 }
 
 input {
+    
     &[type="radio"] {
-        position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+        appearance: none;
     }
 
     &[type="file"] {
@@ -295,9 +296,13 @@ input {
         width: 50%;
     }
 
-        &[type="text"] {
-            border-bottom: 4px solid var(--ns-border);
-        }
+    &[type="text"] {
+        border-bottom: 4px solid var(--ns-border);
+    }
+
+    &[type="date"] {
+        border-bottom: 4px solid var(--ns-border);
+    }
 
     &:user-invalid {
         border-bottom: 4px solid red;
@@ -306,6 +311,7 @@ input {
     &:user-valid {
         border-bottom: 4px solid oklch(0.7807 0.187 143.4);
     }
+
 }
 
 /* progressive disclosure part */
@@ -337,9 +343,6 @@ input {
     }
 }
 
-/* .divVan1d:has(input[value="nee"]:checked) ~ .sendButton {
-  display: block;
-} */
 /* progressive disclosure binnen de childeren van de div */
 ._1b-1 {
     &:has(input[value="ja"]:checked) ~ ._1b-2 {
@@ -408,6 +411,7 @@ input {
     input {
         &:focus {
             border: 2px solid var(--ns-blue);
+            border-bottom: 4px solid var(--ns-blue);
             outline: none;
         }
     }
@@ -424,7 +428,14 @@ input {
         
         &[type="date"] {
         width: 50%;
-    }
+        border-bottom: 4px solid var(--ns-border);
+        }
+
+        &:focus {
+            border: 2px solid var(--ns-blue);
+            border-bottom: 4px solid var(--ns-blue);
+            outline: none;
+        }
     }
 
     label {
@@ -443,6 +454,28 @@ input {
         padding: 0.75rem;
         border-radius: 5px;
         border: 2px solid var(--ns-border);
+
+        &[type="text"] {
+        border-bottom: 4px solid var(--ns-border);
+        }
+
+        &[type="number"] {
+        border-bottom: 4px solid var(--ns-border);
+        }
+
+        &:user-invalid {
+        border-bottom: 4px solid red;
+        }
+
+        &:user-valid {
+            border-bottom: 4px solid oklch(0.7807 0.187 143.4);
+        }
+
+        &:focus {
+            border: 2px solid var(--ns-blue);
+            border-bottom: 4px solid var(--ns-blue);
+            outline: none;
+        }
     }
 
     legend {
@@ -470,6 +503,7 @@ input {
     cursor: pointer;
 }
 
+/* Toon foutmelding als input niet geldig is ingevuld */
 .error {
     color: red;
     font-size: 0.9em;
@@ -477,15 +511,9 @@ input {
     display: none;
 }
 
-/* Toon foutmelding als input niet geldig is ingevuld */
 input:user-invalid + .error {
     display: block;
 }
-
-/* Verberg foutmelding als input geldig is ingevuld */
-/* input:user-valid + .error {
-    display: none;
-} */
 
 @media (min-width: 768px) {
     header {
