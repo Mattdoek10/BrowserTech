@@ -21,7 +21,6 @@ autoScroll.forEach(radio => {
 })
 
 function autoScrollFunctie() {
-    // setTimeout((this.closest("label").nextElementSibling.scrollIntoView({ behavior: "smooth" })), 100)
 
     setTimeout(() => {
         const volgendFieldset = this.closest("fieldset").nextElementSibling;

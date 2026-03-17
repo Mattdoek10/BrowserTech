@@ -231,3 +231,13 @@ const kloon = template.content.cloneNode(true);
 ```
 
 Wat ga ik morgen doen? Morgen ga ik me code beter opschonen en me code goede volgorde geven en me laatste loodjes binnen me website afmaken. en me radiobuttons naast elkaar zetten, door de styling op het element zelf te zetten waar er display blok staat.
+
+### Daily check out 17/03/2026
+Wat heb ik vandaag gedaan? 
+ik heb vandaag mijn website beter gemaakt qua accesibility, want ik had geen aria lable by gebruikt. welke heel goed is voor mensen die screenreaders gebruiken. daarnaast heb ik gekeken naarde code, om mijn error message aan de onderkant te laten verschijnen als iemand de veld niet goed heeft ingevuld etc. 
+
+Hoeveel tijd heeft me dat gekost? Het heeft me ongveer 4-5 uren gekost.
+
+Wat heb ik geleerd? ik heb geleerd dat die aria lable by heel belangrijk us voor mensen die een screen reader gebruiken. Ook hoe ik de text in me website kan zetten en die tevoorschijn kan laten komen met display block en none, en dan de styling erop.
+
+Wat ga ik morgen doen? Morgen ga ik CSS doen.
