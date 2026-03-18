@@ -25,6 +25,24 @@ Wat ga ik morgen doen? Morgen ga ik me website's stijl af proberen te maken van 
 
 bronnen;
 
+### weekly Geek
+Tijdens deze weekly geek heb ik me bezig gehouden met iconen die apple gebruikt. Wat me interreseert is dat hij voorbeelden geeft en die uitlegt. Ook neemt hij de regels erbij die apple zelf zei en schrijft hoe zij zich niet daaraan houden. Ik ben een kant met hem eens dat er te veel iconen worden gebruikt voor teveel verschillende dingen. En dat de zeer weinige iconen maar nuttige beter zijn dan heel veel iconen voor alles. Door iconen te zetten voor de belamgrijke dingen, kan de gebruiker makkelijker dingen vinden waarnaar zij zoeken.
+
+## Weekly checkout week 1 (16 – 17 februari 2026)
+
+**Wat heb ik deze week gedaan?**
+ik heb deze week de kickoff gevolgd over formulieren en ben begonnen aan mijn html opdracht. daarna heb ik de NS huisstijl opgezocht en toegepast op mijn website via css. ook heb ik de weekly geek artikel gelezen en de workshops gevolgd van Vasilis en Victor.
+
+**Hoeveel tijd heeft me dat gekost?**
+het heeft me ongeveer 11 uur gekost. 2 uur voor de kickoff, 3-4 uur aan mijn website, 1 uur voor het artikel en 1.5 uur voor de workshop.
+
+**Wat heb ik geleerd?**
+ik heb geleerd hoe ik kan werken met formulieren in html, hoe ik die moet structureren met fieldset en hoe ik dingen kan nesten. ook heb ik geleerd hoe belangrijk de input fields zijn voor gebruikers met een telefoon. daarnaast heb ik MDN beter leren gebruiken.
+
+**bronnen**
+- https://tonsky.me/blog/tahoe-icons/
+
+
 ### Daily check out 2/03/2026
 Wat heb ik vandaag gedaan? 
 ik heb vandaag mijn website aangepast, ik heb progressive disclosure toegevoegd, en ik heb de workshop gevolg over validefren. 
@@ -70,14 +88,24 @@ aria-checked="true/false" geeft aan of hij geselecteerd is.
 tabindex="0" op de geselecteerde optie (die krijgt focus)
 Tekst binnen de div werkt als label; of je koppelt met aria-labelledby.
 
-### weekly checkout
+## Weekly checkout week 2 (2 – 3 maart 2026)
 
-content hier
+**Wat heb ik deze week gedaan?**
+ik heb deze week progressive disclosure toegevoegd aan mijn website en de workshop gevolgd over valideren. daarna heb ik de weekly geek voorbereid en gepresenteerd, en ben ik begonnen met mijn navigatie. ook heb ik een begin gemaakt aan css to the rescue.
+
+**Hoeveel tijd heeft me dat gekost?**
+het heeft me ongeveer 13 uur gekost. 2x 1.5 uur voor de workshops en weekly geek, de rest aan mijn eigen website.
+
+**Wat heb ik geleerd?**
+ik heb geleerd hoe ik progressive disclosure kan laten werken met alleen css zonder javascript, en hoe ik dat kan toepassen op de parents en children. ook heb ik geleerd hoe ik mijn html en css kan valideren.
+
+**bronnen**
+- https://tractie.ns.nl/2e23992f3/p/088193-iconography/b/02fb99
 
 ### Daily check out 9/03/2026
 Wat heb ik vandaag gedaan? 
 ik heb vandaag mijn validatie afgemaakt binnen html en css, voor nu laat ik het daarbij, als ik meer tijd heb ga ik van javascript erbij doen. daarnaast heb ik de navigatie afgemaakt en detext daarpnder die zegt dat het een school project is met de stijl van de NS.
-![alt text](image.png)
+![alt text](images/image.png)
 
 Daarna heb ik de knop gefixed waarbij iemand een pdf kan uploaden.
 
@@ -108,9 +136,25 @@ Wat heb ik geleerd? ik heb niet iets nieuws geleerd
 
 Wat ga ik morgen doen? Morgen ga ik CSS doen
 
-### weekly summary
+### weekly Geek
 
-komt hier
+Tijdens deze weekly geek keek ik naar de video. Ik vond de styling een beetje teveel gepushed. Maar het boodschap kon ik wel snappen. Namelijk text inputs, en dat zij niet geforceerd of veranderd hoeven te worden als dat niet moet. Want wat hij zegt is dat de input zo goed is en dat het veranderd in een border die je kan klikken.
+
+## Weekly checkout week 3 (9 – 10 maart 2026)
+
+**Wat heb ik deze week gedaan?**
+ik heb deze week mijn validatie afgemaakt binnen html en css en de navigatie en voettekst afgemaakt. ook heb ik de knop gefixed waarbij iemand een pdf kan uploaden. daarna heb ik geprobeerd javascript validatie toe te voegen via de workshop template maar dat is niet gelukt. vervolgens ben ik begonnen aan de tweede pattern waarbij ik pagina 4 van het formulier heb gekozen, en heb ik de website responsive gemaakt.
+
+**Hoeveel tijd heeft me dat gekost?**
+het heeft me ongeveer 9 uur gekost, 4-5 uur per dag.
+
+**Wat heb ik geleerd?**
+ik heb geleerd hoe ik de validatie beter kan doen waarbij er alleen letters moeten worden gebruikt via het pattern attribuut, en hoe ik :user-valid en :user-invalid kan gebruiken in css. ook heb ik geleerd dat javascript validatie meer tijd kost dan verwacht.
+
+**bronnen**
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-valid
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:user-invalid
+- https://www.w3schools.com/tags/att_input_pattern.asp
 
 ### Daily check out 16/03/2026
 Wat heb ik vandaag gedaan? 
@@ -241,3 +285,58 @@ Hoeveel tijd heeft me dat gekost? Het heeft me ongveer 4-5 uren gekost.
 Wat heb ik geleerd? ik heb geleerd dat die aria lable by heel belangrijk us voor mensen die een screen reader gebruiken. Ook hoe ik de text in me website kan zetten en die tevoorschijn kan laten komen met display block en none, en dan de styling erop.
 
 Wat ga ik morgen doen? Morgen ga ik CSS doen.
+
+## Weekly checkout week 4 (16 – 17 maart 2026)
+
+**Wat heb ik deze week gedaan?**
+ik heb deze week mijn website beter responsive gemaakt en javascript toegevoegd waarbij het scherm automatisch scrolled als je een radio button selecteerd. ook heb ik gewerkt met cloning waarbij er een stukje form erbij komt als de gebruiker klikt op verkrijger toevoegen. daarna heb ik mijn accessibility verbeterd door aria-labelledby toe te voegen en heb ik foutmeldingen laten verschijnen via css met display block en none.
+
+**Hoeveel tijd heeft me dat gekost?**
+het heeft me ongeveer 9 uur gekost, 4-5 uur per dag.
+
+**Wat heb ik geleerd?**
+ik heb geleerd hoe ik met javascript een stukje html kan klonen via template.content.cloneNode(true) en die dynamisch in de DOM kan plaatsen. ook heb ik geleerd hoe belangrijk aria-labelledby is voor mensen die een screenreader gebruiken.
+
+**bronnen**
+- https://www.w3schools.com/tags/tag_template.asp
+
+# Reflectie
+
+**over het proces**
+
+Wat heel goed ging is dat ik makkelijk de nieuwe code kon snappen over de fieldset en labels en inputs, alleen in het begin moest ik de hierachie wel goed onder de knie krijgen maar dat ging snel. Ik vind dat dit goed ging want ik had niet veel tijd nodig om het toe te passen.
+
+Wat minder goed ging is het gebruik maken van javascript en die validatie erin doen. het werd alleen toegepast op de eerste input toen ik het probeerde. Dus ik heb dan een alternatief gebruikt met display block en display none op een ```<p>```.
+
+Wat ik anders zou doen volgende keer is meer tijd besteden om javascript beter te leren.
+
+Waarmee ik meer vast zat was de progressive disclosure laten werken met css. Dit had ik opgelast met display block en none met de code;
+
+``` css
+
+.divVan1b {
+    &:has(input[name="1bEersteVraag"][value="nee"]:checked) + .divVan1c ._1c-1,
+    &:has(input[name="1bTweedeVraag"][value="nee"]:checked) + .divVan1c ._1c-1,
+    &:has(input[name="1bDerdeVraag"][value="nee"]:checked) + .divVan1c ._1c-1,
+    &:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c,
+    &:has(input[name="1bDerdeVraag"][value="ja"]:checked) + .divVan1c ._1c-1 {
+        display: block;
+    }
+}
+
+```
+
+
+**over me leerdoelen**
+
+Ik wilde aan het begin meer leren werken met javascript, en ik vind dat ik het niet goed genoeg heb gehaald want ik heb weinig gedaan met javascript. Wat me het meest heeft verras is dat HTML veel meer dingen heeft dan ik dacht en dat ik het heb kunnen leren en toepassen.
+
+
+**over me code**
+
+Ik ben het meest trots op het algemene styling binnen me website, daarnaast op die progressive disclosure die ik heb laten werken met css, want ik zat heel lang daarmee te knoeien. 
+Wat ik nog niet goed genoeg vind is dat de knoppen niet naast elkaar zijn als het op groter scherm word getoont, en de javascript code die zeer nau is.
+
+
+**Eind resultaat**
+![alt text](images/Screenshot%202026-03-18%20231501.png)
